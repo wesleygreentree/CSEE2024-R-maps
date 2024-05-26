@@ -11,7 +11,7 @@ Thank you for attending this workshop on using the R programming language to mak
 **Before the workshop**
 
 Please download this Github repository. If you are new to GitHub,
-click the green <code> button, and select "Download ZIP".
+click the green code button, and select "Download ZIP".
 
 ![github](figures/screenshots-for-readme/github-screenshot.png)
 
@@ -21,7 +21,7 @@ Unzip the folder and move it to a desired location on your computer.
 If you haven't run an R script before, you can highlight all code in this script and select Code > Run Selected Line(s) in RStudio.
 
 
-** Technical details*
+**Technical details**
 
 Using R 4.4 with packages installed May 2024. 
 The leaflet package has not been updated to R 4.4, so version 4.3.1 was used for [scripts/07-interactive-maps.R](https://github.com/wesleygreentree/CSEE2024-R-maps/blob/main/scripts/07-interactive-maps.R).
