@@ -23,5 +23,5 @@ If you haven't run an R script before, you can highlight all code in this script
 
 **Technical details**
 
-Using R 4.4 with packages installed May 2024. 
-The leaflet package has not been updated to R 4.4, so version 4.3.1 was used for [scripts/07-interactive-maps.R](https://github.com/wesleygreentree/CSEE2024-R-maps/blob/main/scripts/07-interactive-maps.R).
+Using R 4.4.0 with packages installed May 2024. 
+The leaflet package has not been updated to R 4.4.0, so version 4.3.1 was used for [scripts/07-interactive-maps.R](https://github.com/wesleygreentree/CSEE2024-R-maps/blob/main/scripts/07-interactive-maps.R).
