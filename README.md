@@ -4,10 +4,7 @@ Workshop at 2024 meeting of the Canadian Society for Ecology and Evolution
 Vancouver, BC. 26 May 2024
 Wesley Greentree, wgreentree@outlook.com
 
-Thank you for attending this workshop on using the R programming language to make beautiful maps to communicate science! This workshop covers the range of standard study area maps (example below) to animated maps with satellite images ([examples here](https://wesleygreentree.github.io/animations/)) This Github repository includes code, data, and slides for the workshop.
-
-![study-area-map](figures/study-area-with-inset.PNG)
-
+Thank you for attending this workshop on using the R programming language to make beautiful maps to communicate science! This workshop covers the range of standard study area maps to animated maps with satellite images ([examples here](https://wesleygreentree.github.io/animations/)) This Github repository includes code, data, and slides for the workshop.
 
 **Before the workshop**
 
