@@ -135,7 +135,7 @@ study.area + inset_element(inset,
 
 ggsave("figures/study-area-with-inset.PNG", 
        width = 17, height = 17, units = "cm",
-       background = "white", dpi = 1600)
+       background = "white", dpi = 300)
 
 
 ## 2. Add bathymetry and topography 
@@ -145,8 +145,8 @@ ggsave("figures/study-area-with-inset.PNG",
 library(tidyterra)
 library(terra)
 
-# read in digital elevation model, with terra::rast()
-gebco <- rast("data-raw/gebco-dem/gebco_2023_n55.0_s44.0_w-135.0_e-120.0.asc")
+# read in digital elevation model
+gebco <- readRDS("data/gebco.RDS")
 
 # get bathymetry layer
 gebco.ocean <- mask(gebco, mask = bc.coast, inverse = TRUE)
@@ -157,16 +157,6 @@ gebco.slope <- terra::terrain(gebco.clipped, v = "slope", unit = "radians")
 gebco.aspect <- terra::terrain(gebco.clipped, v = "aspect", unit = "radians")
 gebco.hillshade <- shade(slope = gebco.slope, aspect = gebco.aspect,
                          angle = 45, direction = 315)
-
-# gebco.hillshade.mask2 <- mask(gebco.hillshade, mask = gebco.ocean,
-#                               inverse = TRUE)
-
-# ggplot() +
-#   geom_spatraster(data = gebco.hillshade.mask2,
-#                   maxcell = 5e+15, alpha = 1,
-#                   show.legend = FALSE) + # 0.7 or 0.45?
-#   scale_fill_distiller(palette = "Greys", na.value = "transparent") +
-#   coord_sf(xlim = c(-124.5, -122.5), ylim = c(48, 49.5))
 
 ggplot() +
   geom_spatraster(data = gebco.hillshade,
@@ -236,7 +226,7 @@ inset <- ggplot() +
   theme_inset()
 inset
 
-# clean up some extra, add labels and an inset
+# add labels and an inset map
 rockfish +
   annotation_scale(width_hint = 0.25) +
   annotation_north_arrow(location = "tr", 
@@ -267,7 +257,7 @@ rockfish +
                 left = -0.01, bottom = 0.7, right = 0.3, top = 1,
                 align_to = "panel")
 
-# add depth contours
+# alternative: add depth contours
 ggplot() +
   # depth contours
   geom_spatraster_contour(data = gebco.ocean, maxcell = 5e+15,
@@ -311,7 +301,8 @@ ggplot() +
   inset_element(inset,
                 left = -0.01, bottom = 0.7, right = 0.3, top = 1,
                 align_to = "panel")
-# the gappy contours may be because GEBCO file is relatively low-resolution
+# the gaps in contours may be because GEBCO file is relatively low-resolution
+# (e.g., very sharp drop offs in Saanich Inlet) 
 # using the full gebco file (not gebco.ocean) can also help
 
 

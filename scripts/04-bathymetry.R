@@ -10,14 +10,19 @@ bc.coast <- read_sf("data/bc-coast.shp")
 st_crs(bc.coast)
 
 # read in digital elevation model, with terra::rast()
-gebco <- rast("data-raw/gebco-dem/gebco_2023_n55.0_s44.0_w-135.0_e-120.0.asc")
+#gebco <- rast("data-raw/gebco-dem/gebco_2023_n55.0_s44.0_w-135.0_e-120.0.asc")
+# the original file was large (~50 MB), so it's not shared in the GitHub
+# repository. 
+# Instead, we have a smaller version (~5MB) saved as an R Data Storage (.RDS)
+gebco <- readRDS("data/gebco.RDS")
+gebco
 
 terra::crs(gebco) # WGS84, but EPSG 6326 not 4326
-st_crs(gebco)
+st_bbox(gebco)
 
 # look at digital elevation model
 gebco.ocean <- mask(gebco, mask = bc.coast, inverse = TRUE)
-#plot(gebco.ocean)
+plot(gebco.ocean)
 
 # plot out bathymetry
 ggplot() +
