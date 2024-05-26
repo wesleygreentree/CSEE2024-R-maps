@@ -2,7 +2,6 @@
 # Palmer penguins dataset: https://allisonhorst.github.io/palmerpenguins/
 
 # setup
-#install.packages("palmerpenguins")
 library(palmerpenguins)
 library(ggplot2)
 library(rphylopic)
@@ -17,10 +16,6 @@ ggplot() +
              aes(x = bill_length_mm, bill_depth_mm, 
                  color = species, shape = species)) +
   theme_classic()
-
-
-ggsave("figures/penguin-default.PNG", width = 17, height = 15, units = "cm",
-       dpi = 1600, background = "white")
 
 ## moving beyond ggplot defaults ---
 
@@ -50,8 +45,6 @@ ggplot() +
   theme(legend.position = "none",
         axis.title = element_text(size = 18, color = "black"),
         axis.text = element_text(size = 16, color = "black"))
-ggsave("figures/penguin-better.PNG", width = 17, height = 15, units = "cm",
-       dpi = 1600, background = "white")
 
 # add phylopic
 
@@ -78,7 +71,7 @@ ggplot() +
         axis.text = element_text(size = 16, color = "black")) +
   
   # add silhouette of gentoo penguin
-  add_phylopic(name = "Pygoscelis papua", x = 58.6, y = 21.1,
-               ysize = 6)
+  add_phylopic(name = "Pygoscelis papua", x = 58.6, y = 20.5,
+               ysize = 2)
 ggsave("figures/penguin-phylopic.PNG", width = 17, height = 15, units = "cm",
        dpi = 1600, background = "white")
