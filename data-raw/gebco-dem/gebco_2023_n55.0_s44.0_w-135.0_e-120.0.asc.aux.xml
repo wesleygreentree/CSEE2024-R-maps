@@ -1,0 +1,78 @@
+<PAMDataset>
+  <Metadata>
+    <MDI key="elevation#grid_mapping">crs</MDI>
+    <MDI key="elevation#long_name">Elevation relative to sea level</MDI>
+    <MDI key="elevation#sdn_parameter_name">Sea floor height (above mean sea level) {bathymetric height}</MDI>
+    <MDI key="elevation#sdn_parameter_urn">SDN:P01::ALATZZ01</MDI>
+    <MDI key="elevation#sdn_uom_name">Metres</MDI>
+    <MDI key="elevation#sdn_uom_urn">SDN:P06::ULAA</MDI>
+    <MDI key="elevation#standard_name">height_above_mean_sea_level</MDI>
+    <MDI key="elevation#units">m</MDI>
+    <MDI key="lat#axis">Y</MDI>
+    <MDI key="lat#long_name">latitude</MDI>
+    <MDI key="lat#sdn_parameter_name">Latitude north</MDI>
+    <MDI key="lat#sdn_parameter_urn">SDN:P01::ALATZZ01</MDI>
+    <MDI key="lat#sdn_uom_name">Degrees north</MDI>
+    <MDI key="lat#sdn_uom_urn">SDN:P06::DEGN</MDI>
+    <MDI key="lat#standard_name">latitude</MDI>
+    <MDI key="lat#units">degrees_north</MDI>
+    <MDI key="lon#axis">X</MDI>
+    <MDI key="lon#long_name">longitude</MDI>
+    <MDI key="lon#sdn_parameter_name">Longitude east</MDI>
+    <MDI key="lon#sdn_parameter_urn">SDN:P01::ALONZZ01</MDI>
+    <MDI key="lon#sdn_uom_name">Degrees east</MDI>
+    <MDI key="lon#sdn_uom_urn">SDN:P06::DEGE</MDI>
+    <MDI key="lon#standard_name">longitude</MDI>
+    <MDI key="lon#units">degrees_east</MDI>
+    <MDI key="NC_GLOBAL#comment">The data in the GEBCO_2023 Grid should not be used for navigation or any purpose relating to safety at sea.</MDI>
+    <MDI key="NC_GLOBAL#Conventions">CF-1.6, ACDD-1.3</MDI>
+    <MDI key="NC_GLOBAL#creator_email">gdacc@seabed2030.org</MDI>
+    <MDI key="NC_GLOBAL#creator_name">GEBCO through the Nippon Foundation-GEBCO Seabed 2030 Project</MDI>
+    <MDI key="NC_GLOBAL#creator_type">International organisation</MDI>
+    <MDI key="NC_GLOBAL#creator_url">https://www.gebco.net</MDI>
+    <MDI key="NC_GLOBAL#date_created">2023-05-18</MDI>
+    <MDI key="NC_GLOBAL#geospatial_bounds">{-180,-90,180,90}</MDI>
+    <MDI key="NC_GLOBAL#geospatial_bounds_crs">WGS84</MDI>
+    <MDI key="NC_GLOBAL#geospatial_bounds_vertical_crs">EPSG:5831</MDI>
+    <MDI key="NC_GLOBAL#geospatial_lat_max">90</MDI>
+    <MDI key="NC_GLOBAL#geospatial_lat_min">-90</MDI>
+    <MDI key="NC_GLOBAL#geospatial_lat_resolution">0.004166666666666667</MDI>
+    <MDI key="NC_GLOBAL#geospatial_lat_units">degrees_north</MDI>
+    <MDI key="NC_GLOBAL#geospatial_lon_max">180</MDI>
+    <MDI key="NC_GLOBAL#geospatial_lon_min">-180</MDI>
+    <MDI key="NC_GLOBAL#geospatial_lon_resolution">0.004166666666666667</MDI>
+    <MDI key="NC_GLOBAL#geospatial_lon_units">degrees_east</MDI>
+    <MDI key="NC_GLOBAL#geospatial_vertical_max">8627</MDI>
+    <MDI key="NC_GLOBAL#geospatial_vertical_min">-10921</MDI>
+    <MDI key="NC_GLOBAL#geospatial_vertical_positive">up</MDI>
+    <MDI key="NC_GLOBAL#geospatial_vertical_resolution">1</MDI>
+    <MDI key="NC_GLOBAL#geospatial_vertical_units">meters</MDI>
+    <MDI key="NC_GLOBAL#history">Information on the development of the data set and the source data sets included in the grid can be found in the data set documentation available from https://www.gebco.net</MDI>
+    <MDI key="NC_GLOBAL#id">DOI: 10.5285/f98b053b-0cbc-6c23-e053-6c86abc0af7b</MDI>
+    <MDI key="NC_GLOBAL#identifier_product_doi">DOI: 10.5285/f98b053b-0cbc-6c23-e053-6c86abc0af7b</MDI>
+    <MDI key="NC_GLOBAL#institution">On behalf of the General Bathymetric Chart of the Oceans (GEBCO), the data are held at the British Oceanographic Data Centre (BODC).</MDI>
+    <MDI key="NC_GLOBAL#keywords">BATHYMETRY/SEAFLOOR TOPOGRAPHY, DIGITAL ELEVATION/DIGITAL TERRAIN MODELS</MDI>
+    <MDI key="NC_GLOBAL#license">The GEBCO Grid is placed in the public domain and may be used free of charge. Use of the GEBCO Grid indicates that the user accepts the conditions of use and disclaimer information: https://www.gebco.net/data_and_products/gridded_bathymetry_data/gebco_2019/grid_terms_of_use.html</MDI>
+    <MDI key="NC_GLOBAL#naming_authority">https://dx.doi.org</MDI>
+    <MDI key="NC_GLOBAL#node_offset">1</MDI>
+    <MDI key="NC_GLOBAL#project">Nippon Foundation - GEBCO Seabed2030 Project</MDI>
+    <MDI key="NC_GLOBAL#references">DOI: 10.5285/f98b053b-0cbc-6c23-e053-6c86abc0af7b</MDI>
+    <MDI key="NC_GLOBAL#source">The GEBCO_2023 Grid is the 2023 version of the global bathymetric product released by the General Bathymetric Chart of the Oceans (GEBCO) and has been developed through the Nippon Foundation-GEBCO Seabed 2030 Project. This is a collaborative project between the Nippon Foundation of Japan and GEBCO. The Seabed 2030 Project aims to bring together all available bathymetric data to produce the definitive map of the world ocean floor and make it available to all.</MDI>
+    <MDI key="NC_GLOBAL#summary">The GEBCO_2023 Grid is a continuous, global terrain model for ocean and land with a spatial resolution of 15 arc seconds.The grid uses as a base-map Version 2.5.5 of the SRTM15+ data set (Tozer et al, 2019). This data set is a fusion of land topography with measured and estimated seafloor topography. It is augmented with gridded bathymetric data sets developed as part of the Nippon Foundation-GEBCO Seabed 2030 Project.</MDI>
+    <MDI key="NC_GLOBAL#title">The GEBCO_2023 Grid - a continuous terrain model for oceans and land at 15 arc-second intervals</MDI>
+  </Metadata>
+  <PAMRasterBand band="1">
+    <UnitType>m</UnitType>
+    <Metadata>
+      <MDI key="grid_mapping">crs</MDI>
+      <MDI key="long_name">Elevation relative to sea level</MDI>
+      <MDI key="NETCDF_VARNAME">elevation</MDI>
+      <MDI key="sdn_parameter_name">Sea floor height (above mean sea level) {bathymetric height}</MDI>
+      <MDI key="sdn_parameter_urn">SDN:P01::ALATZZ01</MDI>
+      <MDI key="sdn_uom_name">Metres</MDI>
+      <MDI key="sdn_uom_urn">SDN:P06::ULAA</MDI>
+      <MDI key="standard_name">height_above_mean_sea_level</MDI>
+      <MDI key="units">m</MDI>
+    </Metadata>
+  </PAMRasterBand>
+</PAMDataset>

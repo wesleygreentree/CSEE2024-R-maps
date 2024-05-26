@@ -1,0 +1,5 @@
+iNaturalist query for rockfish around Victoria, 25 May 2024
+
+
+Query quality_grade=research&identifications=any&swlat=48.03351093487901&swlng=-125.26105556894782&nelat=49.36757140541431&nelng=-122.30573330332282&taxon_id=47762&verifiable=true&spam=false
+Columns id, observed_on_string, observed_on, time_observed_at, time_zone, user_id, user_login, user_name, created_at, updated_at, quality_grade, license, url, image_url, sound_url, tag_list, description, num_identification_agreements, num_identification_disagreements, captive_cultivated, oauth_application_id, place_guess, latitude, longitude, positional_accuracy, private_place_guess, private_latitude, private_longitude, public_positional_accuracy, geoprivacy, taxon_geoprivacy, coordinates_obscured, positioning_method, positioning_device, species_guess, scientific_name, common_name, iconic_taxon_name, taxon_id
