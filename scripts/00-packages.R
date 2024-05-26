@@ -7,4 +7,4 @@ install.packages(c("sf", "stars", "tidyverse",
                    "terra", "tidyterra", "palmerpenguins",
                    "rnaturalearth", "rnaturalearthhires",
                    "rnaturalearthdata", "leaflet", "ggnewscale",
-                   "patchwork"))
+                   "patchwork", "mapedit"))
